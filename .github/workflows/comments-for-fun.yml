@@ -1,0 +1,14 @@
+name: SomeFunnyWorkflow
+
+'on':
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug Info
+        uses: hmarr/debug-action@v3
